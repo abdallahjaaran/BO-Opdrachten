@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex justify-between items-center bg-white py-6 lg:px-40 md:px-20 px-10">
+        <div class="">
+          <a href="#"><img class="h-10 cursor-pointer" src="./img/logo.png" alt="" /></a>
+        </div>
+    <div id="container">
+        <img id="myImage" src="img/0.jpg" height="600px" alt="foto sb">
+        <div id="myInteraction">
+            <div id="myTitle">RijksmuseumAbdallah</div>
+            <input type="text" id="myInput" autocomplete="off">
+            <input type="button" value= "voer in" onclick="getInput()">
+            <h3>Kies welke richting je op wilt:</h3>
+            <nav>
+                <button id="knopNoord" oneclick="goDirection('noord')">Noord</button>
+                <button id="knopWest" oneclick="goDirection('west')">West</button>
+                <button id="knopOost" oneclick="goDirection('oost')">Oost</button>
+                <button id="knopZuid" oneclick="goDirection('zuid')">Zuid</button>
+            </nav>
+            
+        </div>
+    </div>
+    <br>
+    <figure>
+
+    </figure>
+    <script src="script.js"></script>
+    <footer>
+        <p>Het Rijksmuseum in Amsterdam is een van de zestien rijksmusea in Nederland. 
+        De collectie biedt een overzicht van de Nederlandse kunst en geschiedenis met onder andere werken van 17e-eeuwse Nederlandse meesters als Rembrandt, 
+        Vermeer en Hals. Ontdek wat er op dit moment te zien of te doen is in het Rijksmuseum. 
+        Hieronder lichten we de mooiste tentoonstellingen en activiteiten uit voor jou.
+        Telefoon: 020 674 7000
+        openingstijden: tijdelijk gesloten</p>
+    </footer>
+</body>
+
+</html>
