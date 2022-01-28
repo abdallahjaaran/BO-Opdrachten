@@ -1,5 +1,5 @@
 body{
-    background-color: white
+    background-color: white;
 }
 
 header{
@@ -15,6 +15,16 @@ nav{
 }
 
 ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+nav > ul {
     display: flex;
     list-style: none;
     height: 100%;
@@ -68,11 +78,30 @@ figure{
     animation-iteration-count: infinite;
 }
 
+img{
+    max-width: 500px;
+}
+
 #mapImage{
-    margin-top: px;
     max-width: 100%;
 }
 
+nav button{
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#knopNoord, #knopZuid{
+    display: block;
+    width: 300px;
+}
+
+#knopWest, #knopOost{
+    display: inline-block;
+    width: 150px;
+}
 
 @keyframes fotoslider {
     0%{
@@ -100,4 +129,136 @@ footer{
 footer p{
     width: 50%;
     margin: 0 auto;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main{
+    padding: 40px;
+    min-height: 100vh;
+    width: 60vw;
+    margin: 0 auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+nav > ul > li{
+    width: 100%;
+    height: 100%;
+}
+
+.active{
+    background-color: olive;
+}
+
+nav> ul > li > a{
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+#box {
+    width: 940px;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 5px solid black
+}
+
+.col1{
+    float: left; 
+    width: 200px;
+    background-color:lightgray;
+}
+
+.col2{
+    float: left; 
+    width: 200px; 
+    margin-left: 180px;
+    background-color: lightgray;
+}
+
+.col3{
+    float: left;
+    width: 200px;
+    margin-left: 160px;
+    background-color:lightgray;
+}
+
+@media screen and (max-width: 1000px) {
+    main{
+        width: 80vw;
+    }
+    article{
+        width: 80vw;
+    }
+    footer > p{
+        width: 80vw;
+    }
+    img:hover{
+        transform: none;
+    }
+    .top{
+        width: 60px;
+        height: 60px;
+        bottom: 60px;
+        right: 60px;
+    }
+    header{
+        height: auto;
+    }
+    nav{
+        width: 100%;
+    }
+    nav > ul{
+        display: block;
+    }
+}
+
+@media screen and (max-widt: 600px) {
+    body{
+        font-size: 16px;
+    }
+    main{
+        width: 100vw;
+        padding: 20px;
+    }
+    h1{
+        font-size: 180%;
+    }
+    footer > p{
+        width: 100vw;
+        padding-left: 60px;
+    }
 }

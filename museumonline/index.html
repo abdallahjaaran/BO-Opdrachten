@@ -13,13 +13,43 @@
     <header id="header">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="https://www.rijksmuseum.nl/nl/tickets/artikelen">Tickets</a></li>
             </ul>
         </nav>
     </header>
+    <div id="box">
+        <h3>reviews</h3>
+      </div>
+    <div class="col1">                          
+        <p class="white">
+            Het Rijksmuseum krijgt zeker 5 sterren! Een museum zoals die hoort te zijn. 
+            Modern maar toch klassiek, met oog voor de kunst. 
+            Een collectie die zoveel geld waard is dat je hoofd zou tollen. 
+            Maar toch wordt die collectie op een mooie manier gepresenteerd dat je het gevoel hebt dat je de enige bent. 
+            Een werkelijkwaar prachtig museum die een must-see is voor iedereen die in Amsterdam is.
+        </p>                       
+    </div>
+    
+    <div class="col2">
+        <p class="white">
+            Zeer, zeer mooi museum. Het bezoeken waard, 
+            nou eigenlijk verplicht. Het gebouw alleen is al zeer fraai, 
+            wat een schitterende details, kleuren, en muurschilderingen. Alleen daar kan je al uren naar kijken. 
+            Dan ook de collectie, nog lang niet alles gezien. Daar heb je meerdere dagen voor nodig. 
+            Ook een prima service van het personeel wat ons prima hielp!
+        </p>                 
+    </div>
+
+    <div class="col3">
+        <p class="white">
+            Geweldig mooi en groot  museum. Kun je wel een dag in doorbrengen.
+            Parkeren kun je voor 1 euro bij diverse P&R parkeerplaatsen, mits je dan gebruik maakt van het ov. 
+            Diverse trams stoppen vlakbij het museum. Prima geregeld zo!
+        </p>                       
+    </div>
     <div class="flex justify-between items-center bg-white py-6 lg:px-40 md:px-20 px-10">
         <div class="">
           <a href="#"><img class="h-10 cursor-pointer" src="./img/logo.png" alt="" /></a>
@@ -28,30 +58,30 @@
         <img id="myImage" src="img/0.jpg" height="600px" alt="foto sb">
         <div id="myInteraction">
             <div id="myTitle">RijksmuseumAbdallah</div>
-            <input type="text" id="myInput" autocomplete="off">
+            <input autofocus autocomplete="off" type="text" id="myInput">
             <input type="button" value= "voer in" onclick="getInput()">
             <h3>Kies welke richting je op wilt:</h3>
             <nav>
-                <button id="knopNoord" oneclick="goDirection('noord')">Noord</button>
-                <button id="knopWest" oneclick="goDirection('west')">West</button>
-                <button id="knopOost" oneclick="goDirection('oost')">Oost</button>
-                <button id="knopZuid" oneclick="goDirection('zuid')">Zuid</button>
+                <button id="knopNoord" onclick="goDirection('noord')">Noord</button>
+                <button id="knopWest" onclick="goDirection('west')">West</button>
+                <button id="knopOost" onclick="goDirection('oost')">Oost</button>
+                <button id="knopZuid" onclick="goDirection('zuid')">Zuid</button>
+                <img src="img/platte.jpeg" id="mapImage"/>
             </nav>
-            
         </div>
     </div>
     <br>
-    <figure>
-
-    </figure>
+    <figure></figure>
     <script src="script.js"></script>
     <footer>
-        <p>Het Rijksmuseum in Amsterdam is een van de zestien rijksmusea in Nederland. 
-        De collectie biedt een overzicht van de Nederlandse kunst en geschiedenis met onder andere werken van 17e-eeuwse Nederlandse meesters als Rembrandt, 
-        Vermeer en Hals. Ontdek wat er op dit moment te zien of te doen is in het Rijksmuseum. 
-        Hieronder lichten we de mooiste tentoonstellingen en activiteiten uit voor jou.
-        Telefoon: 020 674 7000
-        openingstijden: tijdelijk gesloten</p>
+        <p>
+            Het Rijksmuseum in Amsterdam is een van de zestien rijksmusea in Nederland. 
+            De collectie biedt een overzicht van de Nederlandse kunst en geschiedenis met onder andere werken van 17e-eeuwse Nederlandse meesters als Rembrandt, 
+            Vermeer en Hals. Ontdek wat er op dit moment te zien of te doen is in het Rijksmuseum. 
+            Hieronder lichten we de mooiste tentoonstellingen en activiteiten uit voor jou.
+            Telefoon: 020 674 7000
+            openingstijden: tijdelijk gesloten
+        </p>
     </footer>
 </body>
 
